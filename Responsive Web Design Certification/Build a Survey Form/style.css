@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html, 
+body {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  padding: 20px;
+  background-color: #eee;
+  font-size: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+p {
+  margin-block-start: initial;
+  margin-block-end: initial;
+}
+
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.5rem;
+  min-height: 600px;
+  /* shadow */
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, .3);
+}
+@media (max-width: 700px) {
+  #survey-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+#left-side {
+  display: grid;
+  justify-items: center;
+  padding: 4rem 4rem;
+  background-color: #56A8A0;
+  grid-gap: 1rem;
+}
+@media (max-width: 700px) {
+  #left-side {
+    padding: 3rem;
+  }
+}
+.row {
+  display: grid;
+  width: 100%;
+}
+
+label {
+  align-self: center;
+}
+@media (max-width: 700px) {
+  label {
+    margin-bottom: 5px;
+  }
+}
+input{
+  padding: 1rem;
+  height: 1.2rem;
+}
+
+#right-side {
+  display: grid;
+  padding: 4rem 4rem;
+  background-color: #fff;
+  grid-gap: 30px;
+}
+#dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+ul {
+  list-style: none;
+}
+textarea {
+  height: 85px;
+  padding: 5px;
+  margin: 10px;
+  margin: 15px 0;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+button {
+  width: 8rem;
+  padding: 5px;
+  border: 1px solid #c0c0c0;
+  border-radius: px;
+}
