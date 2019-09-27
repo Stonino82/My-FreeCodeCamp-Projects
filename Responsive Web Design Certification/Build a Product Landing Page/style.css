@@ -1,0 +1,236 @@
+/************ global element styling ************/
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+h2 {
+  font-size: 4rem;
+  margin: 0 auto 20px auto;
+
+}
+/************ /global element styling ************/
+
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 5px 35px #ccc;
+  background-color: white;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #header-img {
+    margin: 0 auto;
+  }
+}
+#header-img {
+  width: 120px;
+  min-width: 120px;
+  margin: 20px 20px;
+  align-self: center;
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+}
+nav ul li a {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.4rem;
+}
+@media (max-width: 600px) {
+  nav {
+    margin-bottom: 2rem;
+  }
+  nav ul {
+    justify-content: space-around;
+  }
+  nav ul li a {
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+  }
+}
+
+/************ SIGN UP ************/
+#signup {
+  background-image:url("https://images.radiox.co.uk/images/17914?width=8280&crop=16_9&signature=Pa9M6lM3AsRtomtf1ZGIsk4zFlk=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+form {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 400px;
+  background-color: #FFFb;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 2px #ccc;
+}
+@media (max-width: 1100px) {
+  #signup form {
+    position: static;
+    height: 700px;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  label {
+    margin-top: 110px;
+    color: white;
+  }
+}
+#inputs {
+  width: 350px;
+}
+input[type="email"] {
+  width: 65%;
+  padding: 1.2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  line-height: 1.5rem;
+}
+input[type="submit"],
+.card .btn{
+  width: 35%;
+  padding: 1.2rem;
+  background-color: #f1c40f;
+  border: 0;
+  margin-left: -5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+input[type="submit"]:hover,
+.card .btn:hover{
+  background-color: #2ff;
+  transition: background-color 1s;
+}
+/************ /SIGN UP ************/
+
+/************ QUALITY ************/
+#quality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  min-height: 300px;
+  padding: 4rem 0;
+}
+/************ /QUALITY ************/
+
+/************ DESCRIPTION ************/
+#description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 400px;
+  margin: 30px auto;
+}
+#description  p{
+  width: 80%;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+/************ /DESCRIPTION ************/
+
+/************ PRICING ************/
+#pricing {
+  min-height: 550px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  #pricing {
+    flex-direction: column;
+  }
+}
+.card {
+  min-height: 400px;
+  width: 250px;
+  border: 1px solid #ccc;
+  margin: 4rem 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.card h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-top:-15px;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+}
+.card h4 {
+  font-size: 1.8rem;
+}
+.card p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  width: 80%;
+}
+.card:last-of-type {
+  transform:scale(1.1);
+  -ms-transform:scale(1.1); // IE 9 
+  -moz-transform:scale(1.1); // Firefox 
+  -webkit-transform:scale(1.1); // Safari and Chrome 
+  -o-transform:scale(1.1); // Opera
+}
+.card:last-of-type h3 {
+  background-color: #f76;
+}
+/************ /PRICING ************/
