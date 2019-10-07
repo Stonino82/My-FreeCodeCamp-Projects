@@ -6,4 +6,4 @@
 <p>Project 2: <a href="Responsive Web Design Certification/Build a Survey Form/Survey-Form.html">build a Survey Form</a></p>
 <p>Project 3: <a href="Responsive Web Design Certification/Build a Product Landing Page/Product-Landing-Page.html">build a Product Landing Page</a></p>
 <p>Project 4: <a href="Responsive Web Design Certification/Build a Technical Documentation Page/Technical-Documentation-Page.html">build a Technical Documentation Page</a></p>
-<p>Project 5: <a href="Responsive Web Design Certification/Build a Personal Portfolio Webpage/Personal-Portfolio-Webpage.html">build a Technical Documentation Page</a></p>
+<p>Project 5: <a href="Responsive Web Design Certification/Build a Personal Portfolio Webpage/Personal-Portfolio-Webpage.html">build a Personal Portfolio Webpage</a></p>
