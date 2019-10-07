@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Personal Portfolio Webpage</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- START NAV -->
+  <header>
+    <nav id="navbar">
+      <div class="navbar-logo"><a href="#">Tony.</a></div>
+
+      <ul class="navbar-items" id="js-menu">
+        <li class="item"><a href="#welcome-section">About</a></li>
+        <li class="item"><a href="#projects">Work</a></li>
+        <li class="item"><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="toggle" id="js-navbar-toggle"><i class="fas fa-bars"></i> </div>
+
+    </nav>
+  </header>
+  <!-- END NAV -->
+
+  <!-- START WELCOME SECTION -->
+
+  <section id="welcome-section">
+    <h1>UX designer, web designer & Front End</h1>
+    <h2>Hey, I'm Tony.</h2>
+  </section>
+
+  <!-- END WELCOME SECTION -->
+
+  <!-- START PROJECTS SECTION -->
+
+  <section id="projects">
+    <header class="section-header">
+      <h3>Some of my projects</h3>
+      <p>Collection of projects I'm doing while working through the Free Code Camp full stack web developer certifications.</p>
+    </header>
+    
+    <div class="projects-grid">
+      
+      <a href="https://codepen.io/Stonino82/pen/VwZVXxp" target="_blank" class="project-tile">
+        <img class="project-image" src="https://screenshot.codepen.io/1638215.VwZVXxp.b6b41cd9-4910-473c-bd30-ef825df4bb07.png" width="100%" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Tribute Page
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      
+      <a href="https://codepen.io/Stonino82/pen/GRKwPwe" target="_blank" class="project-tile">
+        <img class="project-image" src="https://screenshot.codepen.io/1638215.GRKwPwe.de4401c0-a3e6-4a57-a4db-9cd1e484df76.png" width="100%" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Survey form
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      
+      <a href="https://codepen.io/Stonino82/pen/RwbELmP" target="_blank" class="project-tile">
+        <img class="project-image" src="https://screenshot.codepen.io/1638215.RwbELmP.3768aa14-b441-478e-b559-660375492199.png" width="100%" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Product Landing Page
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      
+      <a href="https://codepen.io/Stonino82/pen/pozYeyQ" target="_blank" class="project-tile">
+        <img class="project-image" src="https://screenshot.codepen.io/1638215.pozYeyQ.bd3dce4d-384e-4a86-bb86-5852df1a38bc.png" width="100%" alt="project"/>
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Technical Documentation Page
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      
+    </div>
+  </section>
+
+  <!-- END PROJECTS SECTION -->
+
+  <!-- START CONTACT SECTION -->
+
+  <section id="contact" class="contact-section">
+    <header class="section-header">
+      <h3>Let's be in contact</h3>
+      <p>How do you take your coffee?</p>
+    </header>
+    <div class="contact-links">
+      <a href="#" target="_blank" class="contact-link"><i class="fab fa-facebook-square"></i> Facebook</a>
+      <a id="profile-link" href="https://github.com/Stonino82" target="_blank" class="contact-link"><i class="fab fa-github"></i>GitHub</a>
+      <a href="#" target="_blank" class="contact-link"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+  </section>
+
+  <!-- END CONTACT SECTION -->
+
+  <!-- START FOOTER SECTION -->
+  <footer>
+    <p>This is just another project for the Free Code Camp full stack web developer certifications: Personal Portfolio Project</p>
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script>
+
+  let mainNav = document.getElementById("js-menu");
+  let navBarToggle = document.getElementById("js-navbar-toggle");
+
+  navBarToggle.addEventListener("click", function() {
+    mainNav.classList.toggle("active");
+  });
+
+</script>
+</html>
